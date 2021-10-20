@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#c7c6c6" >
+
+    <!-- android:background="#5b5656" -->
+
+    <TextView
+        android:id="@+id/settingstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Settings"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sendRecButton"
+        android:layout_alignBottom="@+id/sendRecButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:text="Send Recording"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/tweetOut"
+        style="@style/btnStylealert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tweetTF"
+        android:layout_alignBottom="@+id/tweetTF"
+        android:layout_alignLeft="@+id/gpssettings"
+        android:onClick="postToTwitter"
+        android:text="Tweet" />
+
+    <ToggleButton
+        android:id="@+id/sendRecButton"
+        style="@style/btnStylealert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tweetOut"
+        android:layout_alignLeft="@+id/tweetOut"
+        android:onClick="onToggleClicked"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/locationinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tweetTF"
+        android:layout_centerVertical="true"
+        android:text="Location Settings "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tweetTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locationinfo"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="35dp"
+        android:text="Tweet location"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/gpssettings"
+        style="@style/btnStylealert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/locationinfo"
+        android:layout_alignBottom="@+id/locationinfo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:onClick="onGPSClick"
+        android:text="GPS" />
+
+</RelativeLayout>

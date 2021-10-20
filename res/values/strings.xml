@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rescue Me</string>
+    
+    <string name="action_settings">GPS Settings</string>
+    <string name="alert">ALERT</string>
+    <string name="alertMenu">Alert</string>
+    <string name="contacts">Contacts</string>
+    <string name="newSMS">Add SMS</string>
+    <string name="title_activity_sms__templates">SMS Templates</string>
+    <string name="selectedContacts">SOS Contacts</string>
+    <string name="selectedsms">SOS Message</string>
+    <string name="add_message">New Message</string>
+    <string name="add_contact">New Contact</string>  
+    <string name="title_activities_utilities">Utilities</string> 
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string> 
+    <string name="login">Log In</string>    
+    <string name="signup">Register</string>       
+    
+
+    <string name="title_activity_base_menu">BaseMenu</string>
+
+</resources>

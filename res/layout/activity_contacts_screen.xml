@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6d6969" > <!-- Alternate colour #c7c6c6 #494444-->
+
+    <!-- <Button
+        android:id="@+id/buttonContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:onClick="chooseContact"
+        android:text="Add Contact" /> -->
+
+    <!-- <Button
+        android:id="@+id/buttonAddNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonContacts"
+        android:layout_alignBottom="@+id/buttonContacts"
+        android:layout_centerHorizontal="true"
+        
+        android:text="Add" /> -->
+
+    
+
+    <ListView
+        android:id="@+id/listViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:drawSelectorOnTop="true"
+        android:footerDividersEnabled="false"
+        android:padding="10dp"
+        android:scrollbarStyle="outsideOverlay"  >
+        <!-- android:layout_marginTop="50dp"  -->
+        
+       
+    </ListView>
+
+</RelativeLayout>
